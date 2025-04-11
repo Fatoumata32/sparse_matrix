@@ -193,7 +193,7 @@ def main():
         elif choice == '3':
             result = multiply_matrices(mat1, mat2)
         else:
-            print("❌ Invalid choice!")
+            print("Invalid choice!")
             return
         
         # If operation was successful, display and save the result
@@ -205,10 +205,10 @@ def main():
             if not output_file:
                 output_file = "result_matrix.txt"  # Default output file
             result.save_to_file(output_file)
-            print(f"✅ Result saved to {output_file}")
+            print(f"Result saved to {output_file}")
 
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
     # Run tests if argument is "test"
